@@ -44,12 +44,13 @@ st.markdown(page_bg, unsafe_allow_html=True)
 # HEADER & LOGO
 # ----------------------------
 st.markdown("<h1>💖 SMART BILL 💖</h1>", unsafe_allow_html=True)
-st.image("WhatsApp Image 2025-10-22 at 12.29.51_5fa6ae75", use_container_width=True)
+# Uncomment this if image file is present in your repo
+# st.image("logo", use_column_width=True)
 
 # ----------------------------
 # PASSWORD PROTECTION
 # ----------------------------
-password = calculate("🔒 Enter Password to Access", type="password")
+password = st.text_input("🔒 Enter Password to Access", type="password")
 if password != PASSWORD:
     st.warning("Please enter the correct password to continue.")
     st.stop()
@@ -95,6 +96,7 @@ if st.button("💫 Generate Bill"):
     st.success("🎉 Bill Generated Successfully!")
 
 st.markdown("<hr>", unsafe_allow_html=True)
-st.caption("© 2025 Smart Bill | Made with 💕 using Python & Streamlit")
+st.caption("© 2025 Smart Bill | Made with 💕 using Python & Streamlit")
+
 
 
