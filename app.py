@@ -44,7 +44,7 @@ st.markdown(page_bg, unsafe_allow_html=True)
 # HEADER & LOGO
 # ----------------------------
 st.markdown("<h1>💖 SMART BILL 💖</h1>", unsafe_allow_html=True)
-st.image("WhatsApp Image 2025-10-22 at 12.29.51_5fa6ae75", use_column_width=True)
+st.image("WhatsApp Image 2025-10-22 at 12.29.51_5fa6ae75", use_container_width=True)
 
 # ----------------------------
 # PASSWORD PROTECTION
@@ -96,4 +96,5 @@ if st.button("💫 Generate Bill"):
 
 st.markdown("<hr>", unsafe_allow_html=True)
 st.caption("© 2025 Smart Bill | Made with 💕 using Python & Streamlit")
+
 
